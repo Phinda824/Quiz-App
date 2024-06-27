@@ -41,3 +41,9 @@ fuction startQuiz(){
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
+function showQuestion(){
+    let currentQuestion = quetions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+}
